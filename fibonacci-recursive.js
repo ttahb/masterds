@@ -1,6 +1,6 @@
 //a recursive approach to fibonacci series.
 function fibonacciRecursive(n){
-    if(n===0 || n === 1){
+    if(n < 2){
         return n;
     } else {
         return fibonacciRecursive(n-1) + fibonacciRecursive(n-2);

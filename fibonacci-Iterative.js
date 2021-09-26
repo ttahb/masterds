@@ -1,7 +1,7 @@
 //Given a number n, return the index value of that number in fibonacci series
 //e.g. if n = 2, as per the fibonaaci  series 0,1,1,2,3,...   it should return index value at 2 that is return 1. If n = 3, return 2
 function fibonacciIterative(n){
-    if(n === 0 || n === 1){
+    if(n < 2){
         return n;
     } else {
         let n1 =0;
