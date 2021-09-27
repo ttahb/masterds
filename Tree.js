@@ -143,6 +143,14 @@ class Tree {
         }
         
     }
+
+    inOrder(node){
+        if(node){
+            this.inOrder(node.left);
+            console.log(node.value+ " ");
+            this.inOrder(node.right);
+        }
+    }
 }
 
 const tree = new Tree();
@@ -156,6 +164,7 @@ tree.insert(85);
 tree.insert(79);
 tree.insert(77);
 tree.insert(78);
+tree.inOrder(tree.root);
 
 tree.remove(73);
 console.log(tree);
