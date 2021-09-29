@@ -2,21 +2,20 @@ const numbers = [99,44,6,2,1,5,63,87,283,4,0]
 
 function selectionSort(array){
 
-    let len = array.length;
+    const len = array.length;
     for(let i=0; i<len-1; i++){
     
-       let min = array[i];
-       let index;
+       let min = i;
+       let temp = array[i];
        for(let j=i+1; j<len;j++){
             
-            if(array[j] < min){
-                min = array[j];
-                index = j;
+            if(array[j] < array[min]){
+                min = j;
             }
        }
-       let temp = array[i];
-       array[i] = min;
-       array[index] = temp;
+       
+       array[i] = array[min];
+       array[min] = temp;
     }
     return array;
 }
