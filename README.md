@@ -3,6 +3,7 @@ Implementation of a few general purpose data structures and algorithms in JavaSc
 - Linked List
 - Tree
 - Stacks and Queues
+- Graph
 
 Sorting
  - Bubble Sort
