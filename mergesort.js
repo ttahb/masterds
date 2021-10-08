@@ -1,4 +1,4 @@
-const numbers = [6,5,3,1,0,8,7,2,9,4];
+const numbers = [6,5,3,1,8,7,2,9,4];
 
 function mergeSort(array){
     if(array.length === 1){
@@ -9,6 +9,9 @@ function mergeSort(array){
     let mid = array.length/2;
     const left = array.slice(0,mid);
     const right = array.slice(mid);
+
+    console.log('left:',left);
+    console.log('right',right);
 
     return merge( mergeSort(left), mergeSort(right))
 }
