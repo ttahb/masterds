@@ -32,13 +32,14 @@ function merge(left, right){
         }
     }
 
-    if(i == left.length){
-        newArr.push(...right.slice(j));
-    } else {
-        newArr.push(...left.slice(i));
-    }
+    // if(i == left.length){
+    //     newArr.push(...right.slice(j));
+    // } else {
+    //     newArr.push(...left.slice(i));
+    // }
 
-    return newArr;
+   // return newArr;
+    return newArr.concat(left.slice(i)).concat(right.slice(j));
 }
 
 const answer = mergeSort(numbers);
