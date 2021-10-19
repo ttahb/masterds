@@ -32,6 +32,7 @@ function merge(left, right){
         }
     }
 
+    //console.log(left,right);
     // if(i == left.length){
     //     newArr.push(...right.slice(j));
     // } else {
