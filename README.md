@@ -10,6 +10,7 @@ Sorting
  - Selection Sort
  - Insertion Sort
  - Merge Sort
+ - Quick Sort
 
 
 Algorithms
