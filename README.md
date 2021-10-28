@@ -4,6 +4,7 @@ Implementation of a few general purpose data structures and algorithms in JavaSc
 - Tree
 - Stacks and Queues
 - Graph
+- Heap
 
 Sorting
  - Bubble Sort
@@ -11,6 +12,7 @@ Sorting
  - Insertion Sort
  - Merge Sort
  - Quick Sort
+ - Shell Sort
 
 
 Algorithms
