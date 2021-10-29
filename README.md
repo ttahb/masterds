@@ -13,6 +13,7 @@ Sorting
  - Merge Sort
  - Quick Sort
  - Shell Sort
+ - Heap Sort
 
 
 Algorithms
