@@ -18,3 +18,4 @@ Sorting
 
 Algorithms
 - Recursion
+- Heapify
