@@ -151,6 +151,32 @@ class Tree {
             this.inOrder(node.right);
         }
     }
+
+    breadthFirstSearch() {
+	
+        let list = [];
+        let queue = [];
+            
+        let currentNode = this.root;
+        queue.push( currentNode);
+            
+        while( queue.length > 0 ) {
+                
+            currentNode = queue.shift();
+            list.push(currentNode.value);
+        
+            if (currentNode.left) {
+                queue.push(currentNode.left);
+            }
+        
+            if(currentNode.right) {
+                queue.push(currentNode.right);
+            }
+        }
+            
+        return list;
+    }
+        
 }
 
 const tree = new Tree();
@@ -164,7 +190,8 @@ tree.insert(85);
 tree.insert(79);
 tree.insert(77);
 tree.insert(78);
-tree.inOrder(tree.root);
+// tree.inOrder(tree.root);
 
-tree.remove(73);
-console.log(tree);
+// tree.remove(73);
+// console.log(tree);
+console.log(tree.breadthFirstSearch());
