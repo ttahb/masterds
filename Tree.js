@@ -144,13 +144,19 @@ class Tree {
         
     }
 
-    inOrder(node){
-        if(node){
-            this.inOrder(node.left);
-            console.log(node.value+ " ");
-            this.inOrder(node.right);
+    inOrder(node, list){
+        if(node.left){
+            this.inOrder(node.left, list);
         }
+        
+        list.push(node.value);
+        
+        if(node.right){
+            this.inOrder(node.right, list);
+        }
+        return list;
     }
+    
 
     breadthFirstSearch() {
 	
@@ -176,8 +182,34 @@ class Tree {
             
         return list;
     }
+
+    depthFirstSearchInOrderIterative(){
+        let current = this.root;
+        let list = [];
+        let stack = [];
+
+        while( stack.length || current ){
+
+            if(current){
+                stack.push(current);
+                current = current.left;
+            } else {
+                current = stack.pop();
+                list.push(current.value);
+                current = current.right;
+            }
+        }
+        return list;
+    }
+
+    depthFirstSearchInOrderRecursive(){
+        return this.inOrder(this.root, []);
+    }
+    
         
 }
+
+
 
 const tree = new Tree();
 tree.insert(50);
@@ -194,4 +226,6 @@ tree.insert(78);
 
 // tree.remove(73);
 // console.log(tree);
-console.log(tree.breadthFirstSearch());
+//console.log(tree.breadthFirstSearch());
+//console.log(tree.depthFirstSearchInOrderIterative());
+console.log(tree.depthFirstSearchInOrderRecursive());
