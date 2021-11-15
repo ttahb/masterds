@@ -42,6 +42,40 @@ class Graph {
     displayAdjacencyMatrix() {
         return this.adjMatrix;
     }
+
+    breadthFirstSearch(node){
+        
+        // traversedList - contains all those nodes whose neighouring nodes are visited once completly
+        let traversedList = [];
+        let len = this.adjMatrix.length;
+
+        // Assigning false values to all nodes never visited 
+        let visited = [];
+        for(let i=0; i < len;i++ ){
+            visited[i] = false;
+        }
+
+        let queue = [];
+        queue.push(node);
+        visited[node] = true;
+
+        while(queue.length > 0){
+            let current = queue.shift();
+
+            for(let i = 0; i < len; i++){
+                if(this.adjMatrix[current][i] === 1){
+                    if(!visited[i]){
+                        queue.push(i);
+                        visited[i] = true;
+                    }
+                }
+            }
+
+            traversedList.push(current);
+        }
+
+        return traversedList;
+    }
 }
 
 
@@ -65,4 +99,5 @@ graph.addEdge('4', '5');
 graph.addEdge('5', '6');
 graph.addEdge('5', '7');
 
-console.log(graph.displayAdjacencyMatrix());
+//console.log(graph.displayAdjacencyMatrix());
+console.log(graph.breadthFirstSearch(5));
