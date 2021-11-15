@@ -19,4 +19,5 @@ Sorting
 Algorithms
 - Recursion
 - Heapify
-- BFS (Tree)
+- BFS ( Tree / Graph) 
+- DFS (Tree -InOrder, PreOder & PostOrder / Graph)
