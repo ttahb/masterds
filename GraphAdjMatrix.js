@@ -76,6 +76,42 @@ class Graph {
 
         return traversedList;
     }
+
+    depthFirstSearch(node){
+       
+        let traversedList = [];
+        let stack = [];
+        let visited = [];
+
+        let len = this.adjMatrix.length;
+
+        for(let i=0; i < len;i++ ){
+            visited[i] = false;
+        }
+        // marking starting node as visited and traversed
+        visited[node] = true;
+        traversedList.push(node);
+
+        while( stack.length > 0 || node){
+            let current = node;
+
+            for(let i=0; i < len+1;i++){
+                if(this.adjMatrix[node][i] === 1 && !visited[i]){
+                    stack.push(node);
+                    visited[i] = true;
+                    traversedList.push(i);
+                    node = i;
+                    break;
+                }
+            }
+
+            if(node === current){
+                node = stack.pop();
+            }
+        }
+
+        return traversedList;
+    }
 }
 
 
@@ -100,4 +136,5 @@ graph.addEdge('5', '6');
 graph.addEdge('5', '7');
 
 //console.log(graph.displayAdjacencyMatrix());
-console.log(graph.breadthFirstSearch(5));
+//console.log(graph.breadthFirstSearch(5));
+console.log(graph.depthFirstSearch(4));
