@@ -1,5 +1,6 @@
 # masterds
-Implementation of a few general purpose data structures and algorithms in JavaScript
+Implementation of a few general purpose data structures and algorithms in plain JavaScript.
+
 - Linked List
 - Tree
 - Stacks and Queues
@@ -21,3 +22,5 @@ Algorithms
 - Heapify
 - BFS ( Tree / Graph) 
 - DFS (Tree -InOrder, PreOder & PostOrder / Graph)
+- Prim's usign adj matrix
+- Kruskal's using edge list.
