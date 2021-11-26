@@ -2,6 +2,7 @@
 Implementation of a few general purpose data structures and algorithms in plain JavaScript.
 
 - Linked List
+- Hashtable
 - Tree
 - Stacks and Queues
 - Graph
@@ -21,6 +22,6 @@ Algorithms
 - Recursion
 - Heapify
 - BFS ( Tree / Graph) 
-- DFS (Tree -InOrder, PreOder & PostOrder / Graph)
-- Prim's usign adj matrix
+- DFS (Tree Traversal -InOrder, PreOder & PostOrder / Graph)
+- Prim's using adj matrix
 - Kruskal's using edge list.
