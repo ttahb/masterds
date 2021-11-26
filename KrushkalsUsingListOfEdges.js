@@ -92,7 +92,7 @@ class Graph {
     
 }
 
-const graph = new Graph(7);
+const graph = new Graph(7)
 graph.addEdge(1,2,25);
 graph.addEdge(1,6,5);
 graph.addEdge(2,3,12);
@@ -102,6 +102,28 @@ graph.addEdge(4,5,16);
 graph.addEdge(4,7,14);
 graph.addEdge(5,6,20);
 graph.addEdge(5,7,18);
+
+
+
+//Test 2
+// const graph = new Graph(8);
+// graph.addEdge(0,1,10);
+// graph.addEdge(1,4,0);
+// graph.addEdge(4,7,8);
+// graph.addEdge(7,6,12);
+// graph.addEdge(6,3,7);
+// graph.addEdge(3,0,4);
+// graph.addEdge(0,2,1);
+// graph.addEdge(2,5,8);
+// graph.addEdge(5,7,9);
+// graph.addEdge(1,2,3);
+// graph.addEdge(4,5,1);
+// graph.addEdge(2,3,2);
+// graph.addEdge(5,3,2);
+// graph.addEdge(5,6,6);
+
+
+
 
 console.log(graph.findMST());
 
