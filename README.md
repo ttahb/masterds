@@ -1,4 +1,4 @@
-# masterds
+# Master DS
 Implementation of a few general purpose data structures and algorithms in plain JavaScript.
 
 - Linked List
