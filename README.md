@@ -1,4 +1,4 @@
-# Master DS
+# Master DSA
 Implementation of a few general purpose data structures and algorithms in plain JavaScript.
 
 - Linked List
@@ -11,10 +11,10 @@ Implementation of a few general purpose data structures and algorithms in plain 
 Sorting
  - Bubble Sort
  - Selection Sort
- - Insertion Sort
+ - [:movie_camera:](https://youtu.be/m-vKHquzHiM) Insertion Sort
  - Merge Sort
  - Quick Sort
- - Shell Sort
+ - [:movie_camera:](https://youtu.be/m-vKHquzHiM) Shell Sort
  - Heap Sort
 
 
