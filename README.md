@@ -1,4 +1,4 @@
-# Master DSA
+# Data Structure and Algorithm in Javascript
 Implementation of a few general purpose data structures and algorithms in plain JavaScript.
 
 - Linked List
