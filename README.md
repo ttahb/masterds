@@ -1,5 +1,5 @@
 # Data Structure and Algorithm in Javascript
-Implementation of a few general purpose data structures and algorithms in plain JavaScript.
+An implementation of a few general purpose data structures and algorithms in plain JavaScript.
 
 - [Linked List](https://github.com/ttahb/masterds/blob/master/linkedlist.js)
 - [Doubly Linked List](https://github.com/ttahb/masterds/blob/master/doublyLinkedList.js)
